@@ -18,6 +18,9 @@
     "dist/",
     "loader/"
   ],
+  "publishConfig": {
+    "@LuisEVO:registry": "https://npm.pkg.github.com/@tera/ui"
+  },
   "scripts": {
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
