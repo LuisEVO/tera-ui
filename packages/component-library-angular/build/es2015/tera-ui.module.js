@@ -4,11 +4,12 @@
  */
 import { NgModule } from '@angular/core';
 import { defineCustomElements } from '@lvilcarromeroo/tera-ui-core/loader';
-import { MyComponent, } from './directives/proxies';
+import { MyComponent, TeraButton } from './directives/proxies';
 defineCustomElements(window);
 /** @type {?} */
 const DECLARATIONS = [
     MyComponent,
+    TeraButton
 ];
 export class TeraUIModule {
 }

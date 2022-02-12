@@ -5,6 +5,9 @@ import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
 import { Components } from '@lvilcarromeroo/tera-ui-core';
 
+
+
+
 export declare interface MyComponent extends Components.MyComponent {}
 
 @ProxyCmp({
@@ -18,6 +21,27 @@ export declare interface MyComponent extends Components.MyComponent {}
   inputs: ['first', 'last', 'middle']
 })
 export class MyComponent {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface TeraButton extends Components.TeraButton {}
+
+@ProxyCmp({
+  defineCustomElementFn: undefined,
+  inputs: ['size']
+})
+@Component({
+  selector: 'tera-button',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['size']
+})
+export class TeraButton {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();

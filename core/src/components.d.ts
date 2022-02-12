@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Size } from "./utils/sizes.enum";
 export namespace Components {
     interface MyComponent {
         /**
@@ -20,6 +21,9 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface TeraButton {
+        "size": Size;
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -28,8 +32,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLTeraButtonElement extends Components.TeraButton, HTMLStencilElement {
+    }
+    var HTMLTeraButtonElement: {
+        prototype: HTMLTeraButtonElement;
+        new (): HTMLTeraButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "tera-button": HTMLTeraButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,8 +58,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface TeraButton {
+        "size"?: Size;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "tera-button": TeraButton;
     }
 }
 export { LocalJSX as JSX };
@@ -56,6 +71,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "tera-button": LocalJSX.TeraButton & JSXBase.HTMLAttributes<HTMLTeraButtonElement>;
         }
     }
 }

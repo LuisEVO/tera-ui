@@ -19,7 +19,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     angularOutputTarget({
-      componentCorePackage: `@lvilcarromero/tera-ui`,
+      componentCorePackage: `@lvilcarromeroo/tera-ui-core`,
       directivesProxyFile: `../packages/component-library-angular/src/directives/proxies.ts`,
     }),
   ],

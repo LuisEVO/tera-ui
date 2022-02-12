@@ -132,6 +132,35 @@ var MyComponent = /** @class */ (function () {
     ], MyComponent);
     return MyComponent;
 }());
+var TeraButton = /** @class */ (function () {
+    function TeraButton(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+    TeraButton.decorators = [
+        { type: Component, args: [{
+                    selector: 'tera-button',
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    template: '<ng-content></ng-content>',
+                    inputs: ['size']
+                },] },
+    ];
+    /** @nocollapse */
+    TeraButton.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: ElementRef },
+        { type: NgZone }
+    ]; };
+    TeraButton = __decorate([
+        ProxyCmp({
+            defineCustomElementFn: undefined,
+            inputs: ['size']
+        }),
+        __metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
+    ], TeraButton);
+    return TeraButton;
+}());
 
 /**
  * @fileoverview added by tsickle
@@ -141,6 +170,7 @@ defineCustomElements(window);
 /** @type {?} */
 var DECLARATIONS = [
     MyComponent,
+    TeraButton
 ];
 var TeraUIModule = /** @class */ (function () {
     function TeraUIModule() {
@@ -166,4 +196,4 @@ var TeraUIModule = /** @class */ (function () {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { MyComponent, TeraUIModule, ProxyCmp as ɵa };
+export { MyComponent, TeraButton, TeraUIModule, ProxyCmp as ɵa };

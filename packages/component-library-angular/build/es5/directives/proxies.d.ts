@@ -7,3 +7,10 @@ export declare class MyComponent {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface TeraButton extends Components.TeraButton {
+}
+export declare class TeraButton {
+    protected z: NgZone;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}

@@ -1,6 +1,6 @@
 {
   "name": "@lvilcarromeroo/tera-ui-angular",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "private": false,
   "description": "Angular specific wrapper for component-library",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@lvilcarromeroo/tera-ui-core": "^0.0.0",
+    "@lvilcarromeroo/tera-ui-core": "0.0.4",
     "tslib": "^1.9.3"
   },
   "peerDependencies": {
