@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "core",
+			"path": "../../stencil-ds-output-targets/core"
+		},
+		{
+			"name": "packages",
+			"path": "../../stencil-ds-output-targets/packages"
+		},
+		{
+			"name": "tera-ui",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
