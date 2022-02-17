@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/design-system-angular",
+  "sourceRoot": "libs/design-system-angular/src",
+  "prefix": "tera",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/design-system-angular"],
+      "options": {
+        "jestConfig": "libs/design-system-angular/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/design-system-angular/src/**/*.ts",
+          "libs/design-system-angular/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

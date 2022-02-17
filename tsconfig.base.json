@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lvilcarromeroo/design-system": ["libs/design-system/src/index.ts"],
+      "@lvilcarromeroo/design-system-angular": [
+        "libs/design-system-angular/src/index.ts"
+      ],
+      "@lvilcarromeroo/design-system-react": [
+        "libs/design-system-react/src/index.ts"
+      ],
+      "@lvilcarromeroo/tera-ui-core": ["dist/libs/design-system"],
+      "@lvilcarromeroo/tera-ui-core/loader": ["dist/libs/design-system/loader"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
