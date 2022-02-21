@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from "./app.module.scss";
-import { TeraButton } from "@lvilcarromeroo/design-system-react";
+import { TeraButton } from "@tera-sd/react";
 
 export function App() {
   return (

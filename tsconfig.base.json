@@ -15,15 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@lvilcarromeroo/design-system": ["libs/design-system/src/index.ts"],
-      "@lvilcarromeroo/design-system-angular": [
+      "@tera-sd/angular": [
         "libs/design-system-angular/src/index.ts"
       ],
-      "@lvilcarromeroo/design-system-react": [
+      "@tera-sd/react": [
         "libs/design-system-react/src/index.ts"
       ],
-      "@lvilcarromeroo/tera-ui-core": ["dist/libs/design-system"],
-      "@lvilcarromeroo/tera-ui-core/loader": ["dist/libs/design-system/loader"]
+      "@tera-sd/core": ["dist/libs/design-system"],
+      "@tera-sd/core/loader": ["dist/libs/design-system/loader"]
     }
   },
   "exclude": ["node_modules", "tmp"]

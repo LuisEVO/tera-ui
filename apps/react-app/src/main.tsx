@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import App from './app/app';
 
-import { applyPolyfills, defineCustomElements } from '@lvilcarromeroo/tera-ui-core/loader';
+import { applyPolyfills, defineCustomElements } from '@tera-sd/core/loader';
 
 ReactDOM.render(
   <StrictMode>

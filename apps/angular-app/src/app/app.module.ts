@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DesignSystemAngularModule } from '@lvilcarromeroo/design-system-angular';
+import { DesignSystemAngularModule } from '@tera-sd/angular';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';

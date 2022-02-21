@@ -1,5 +1,5 @@
 {
-  "name": "@lvilcarromeroo/tera-ui-core",
+  "name": "@tera-sd/core",
   "version": "0.0.1",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",

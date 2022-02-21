@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { defineCustomElements } from '@lvilcarromeroo/tera-ui-core/loader';
+import { defineCustomElements } from '@tera-sd/core/loader';
 
 import {
   TeraButton
