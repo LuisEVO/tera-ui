@@ -4,16 +4,46 @@
   "projectType": "library",
   "tags": [],
   "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/design-system-react",
+        "tsConfig": "libs/design-system-react/tsconfig.lib.json",
+        "project": "libs/design-system-react/package.json",
+        "entryFile": "libs/design-system-react/src/index.ts",
+        "external": [
+          "react/jsx-runtime"
+        ],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/design-system-react/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/design-system-react/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "libs/design-system-react/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/design-system-react"],
+      "outputs": [
+        "coverage/libs/design-system-react"
+      ],
       "options": {
         "jestConfig": "libs/design-system-react/jest.config.js",
         "passWithNoTests": true

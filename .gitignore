@@ -68,3 +68,7 @@ core/www/
 angular/build/
 
 .npmrc
+libs/design-system-react/**/generated
+
+.angular
+libs/design-system-angular/**/generated

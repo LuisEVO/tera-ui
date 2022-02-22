@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DesignSystemAngularModule } from '@tera-sd/angular';
+import { TeraSDModule } from '@tera-sd/angular';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    DesignSystemAngularModule,
+    TeraSDModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],

@@ -15,4 +15,4 @@ const DECLARATIONS = [
   declarations: DECLARATIONS,
   exports: DECLARATIONS,
 })
-export class DesignSystemAngularModule {}
+export class TeraSDModule {}

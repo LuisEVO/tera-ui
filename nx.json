@@ -1,5 +1,5 @@
 {
-  "npmScope": "tera-ui",
+  "npmScope": "tera-sd",
   "affected": {
     "defaultBase": "main"
   },
@@ -17,7 +17,12 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
         "accessToken": "MDZjZDM4MjMtMDdkMy00NGJkLWE0MGEtZDkzMmJmNDU5NmY0fHJlYWQtd3JpdGU="
       }
     }

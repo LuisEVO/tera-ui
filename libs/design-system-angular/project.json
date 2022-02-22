@@ -4,9 +4,29 @@
   "sourceRoot": "libs/design-system-angular/src",
   "prefix": "tera",
   "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": [
+        "dist/libs/design-system-angular"
+      ],
+      "options": {
+        "project": "libs/design-system-angular/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/design-system-angular/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/design-system-angular/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/design-system-angular"],
+      "outputs": [
+        "coverage/libs/design-system-angular"
+      ],
       "options": {
         "jestConfig": "libs/design-system-angular/jest.config.js",
         "passWithNoTests": true

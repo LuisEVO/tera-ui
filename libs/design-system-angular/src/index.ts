@@ -1,1 +1,1 @@
-export * from './lib/design-system-angular.module';
+export * from "./lib/tera-sd.module";

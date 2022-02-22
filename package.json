@@ -1,5 +1,5 @@
 {
-  "name": "tera-ui",
+  "name": "tera-sd",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -49,6 +49,7 @@
     "@nrwl/tao": "13.8.1",
     "@nrwl/web": "13.8.1",
     "@nrwl/workspace": "13.8.1",
+    "@nxext/react": "^13.0.5",
     "@nxext/tailwind": "^11.0.1",
     "@stencil/angular-output-target": "^0.4.0",
     "@stencil/core": "^2.12.0",
@@ -78,7 +79,12 @@
     "jest": "26.6.3",
     "jest-config": "26.6.3",
     "jest-preset-angular": "11.1.1",
+    "ng-packagr": "^13.0.0",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
     "postcss-replace": "^2.0.0",
+    "postcss-url": "^10.1.1",
     "prettier": "^2.5.1",
     "puppeteer": "^13.3.2",
     "react-test-renderer": "17.0.2",
