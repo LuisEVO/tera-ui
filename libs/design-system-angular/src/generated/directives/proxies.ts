@@ -1,3 +1,6 @@
+/* eslint-disable @angular-eslint/component-class-suffix */
+/* eslint-disable @angular-eslint/no-inputs-metadata-property */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 /* tslint:disable */
 /* auto-generated angular directive proxies */
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
